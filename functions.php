@@ -244,6 +244,28 @@ function bones_fonts() {
 
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
-
+/*
+This function allows you to modify how the 
+byline is displayed
+*/
+function bones_byline() {
+  ?>
+  <p class="byline entry-meta vcard">
+  <?php printf( __( 'Posted %1$s <span class="by">by</span> %2$s', 'bonestheme' ),
+                    /* the time the post was published */
+                    '<time 
+                        class="updated entry-time" 
+                        datetime="' . get_the_time('Y-m-d') . 
+                      '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . 
+                    '</time>',
+                    /* the author of the post */
+                    '<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . 
+                      get_the_author_link( get_the_author_meta( 'ID' ) ) . 
+                    '</span>'
+              ); 
+  ?>
+  </p>
+  <?php
+}
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
