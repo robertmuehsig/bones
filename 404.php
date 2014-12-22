@@ -17,18 +17,16 @@
 							<section class="entry-content">
 
 								<p><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'bonestheme' ); ?></p>
-
-							</section>
-
-							<section class="search">
-
-									<p><?php get_search_form(); ?></p>
-
+								<a href="https://www.flickr.com/photos/st3f4n/3951143570/">
+									<img src="https://farm3.staticflickr.com/2465/3951143570_20b4eccd3f.jpg" 
+									width="500" height="333" 
+									alt="Two small plastic toy Stormtroopers from Star Wars stare at a computer monitor. They are searching Google for 'The Droids we are looking for'.">
+								</a>
 							</section>
 
 							<footer class="article-footer">
 
-									<p><?php _e( 'This is the 404.php template.', 'bonestheme' ); ?></p>
+									<p><?php //_e( 'This is the 404.php template.', 'bonestheme' ); ?></p>
 
 							</footer>
 

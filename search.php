@@ -48,9 +48,14 @@
 										</header>
 										<section class="entry-content">
 											<p><?php _e( 'Try your search again.', 'bonestheme' ); ?></p>
+											<a href="https://www.flickr.com/photos/st3f4n/3951143570/">
+												<img src="https://farm3.staticflickr.com/2465/3951143570_20b4eccd3f.jpg" 
+												width="500" height="333" 
+												alt="Two small plastic toy Stormtroopers from Star Wars stare at a computer monitor. They are searching Google for 'The Droids we are looking for'.">
+											</a>
 										</section>
 										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the search.php template.', 'bonestheme' ); ?></p>
+												<p><?php //_e( 'This is the error message in the search.php template.', 'bonestheme' ); ?></p>
 										</footer>
 									</article>
 
