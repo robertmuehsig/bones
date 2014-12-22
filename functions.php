@@ -146,6 +146,35 @@ function bones_theme_customizer($wp_customize) {
   // Uncomment the following to change the default section titles
   // $wp_customize->get_section('colors')->title = __( 'Theme Colors' );
   // $wp_customize->get_section('background_image')->title = __( 'Images' );
+
+  // Adds a user option to switch between displaying the full posts (default)
+  // and excerpts.  This option can be found in wp-admin/customize.php
+  // Based on http://kwight.ca/2013/01/22/using-the-wordpress-theme-customizer-to-choose-between-excerpts-or-full-content/
+  $wp_customize->add_section( 'themeslug_layout_section' , 
+    array(
+        'title'       => __( 'Layout', 'themeslug' ),
+        'priority'    => 30,
+        'description' => 'Change how Bones displays posts',
+    ) 
+  );
+  $wp_customize->add_setting( 'themeslug_post_content', 
+    array(
+        'default'   => 'bones_posts_full',
+    ) 
+  );
+  $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'themeslug_post_content', 
+      array(
+        'label'     => __( 'Post content', 'themeslug' ),
+        'section'   => 'themeslug_layout_section',
+        'settings'  => 'themeslug_post_content',
+        'type'      => 'radio',
+        'choices'   => array(
+          'bones_posts_excerpt'  => 'Excerpt',
+          'bones_posts_full'     => 'Full content',
+        ),
+      ) 
+    ) 
+  );
 }
 
 add_action( 'customize_register', 'bones_theme_customizer' );

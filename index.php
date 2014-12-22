@@ -18,7 +18,13 @@
 								</header>
 
 								<section class="entry-content cf">
-									<?php the_content(); ?>
+								<?php
+									if ( 'bones_posts_excerpt' == get_theme_mod( 'themeslug_post_content' ) ) :
+										the_excerpt();
+									else :
+										the_content();
+									endif;
+								?>
 								</section>
 
 								<footer class="article-footer cf">
