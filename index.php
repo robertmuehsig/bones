@@ -20,6 +20,10 @@
 								<section class="entry-content cf">
 								<?php
 									if ( 'bones_posts_excerpt' == get_theme_mod( 'themeslug_post_content' ) ) :
+										// check if the post has a Post Thumbnail assigned to it.
+										if ( has_post_thumbnail() ) {
+											the_post_thumbnail('bones-thumb-800');
+										} 
 										the_excerpt();
 									else :
 										the_content();
