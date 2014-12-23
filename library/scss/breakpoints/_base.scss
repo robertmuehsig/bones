@@ -25,6 +25,10 @@ body {
 	-webkit-font-smoothing: antialiased; // For mobile browsers
 }
 
+iframe {
+	max-width: 100%; // Stop Oembeds / YouTube etc from being too wide.	
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
