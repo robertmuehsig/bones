@@ -295,7 +295,7 @@ byline is displayed
 function bones_byline() {
   ?>
   <p class="byline entry-meta vcard">
-  <?php printf( __( 'Posted %1$s <span class="by">by</span> %2$s', 'bonestheme' ),
+  <?php printf( __( 'Posted %1$s &amp; filed under %2$s', 'bonestheme' ),
                     /* the time the post was published */
                     '<time 
                         class="updated entry-time" 
@@ -303,11 +303,21 @@ function bones_byline() {
                       '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . 
                     '</time>',
                     /* the author of the post */
-                    '<span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . 
-                      get_the_author_link( get_the_author_meta( 'ID' ) ) . 
-                    '</span>'
+                    get_the_category_list(', ')
               ); 
   ?>
+  | <a href="<?php comments_link(); ?>">
+  <?php
+      comments_number( __( '0 comments', 'bonestheme' ), __( '1 comment', 'bonestheme' ), _n( '% comment', '% comments', get_comments_number(), 'bonestheme' ) );
+  ?></a>
+    <br /><?php the_tags( '<span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '' ); ?>
+    | <?php 
+      $views = get_post_meta( get_the_ID(), 'jetpack-post-views', true );
+      if (($views != null) && ($views > 100))
+      {
+        echo "Read " . number_format($views) . " times."; 
+      }
+    ?> 
   </p>
   <?php
 }

@@ -19,19 +19,21 @@
 
 								</header>
 
-								<section class="entry-content">
-										<?php the_excerpt( '<span class="read-more">' . __( 'Read more &raquo;', 'bonestheme' ) . '</span>' ); ?>
-
+								<section class="entry-content cf">
+								<?php
+									if ( 'bones_posts_excerpt' == get_theme_mod( 'themeslug_post_content' ) ) :
+										// check if the post has a Post Thumbnail assigned to it.
+										if ( has_post_thumbnail() ) {
+											the_post_thumbnail('bones-thumb-800');
+										} 
+										the_excerpt();
+									else :
+										the_content();
+									endif;
+								?>
 								</section>
 
 								<footer class="article-footer">
-
-									<?php if(get_the_category_list(', ') != ''): ?>
-                  					<?php printf( __( 'Filed under: %1$s', 'bonestheme' ), get_the_category_list(', ') ); ?>
-                  					<?php endif; ?>
-
-                 					<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
-
 								</footer> <!-- end article footer -->
 
 							</article>
