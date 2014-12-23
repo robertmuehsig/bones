@@ -9,7 +9,8 @@
 http_path = "/"
 
 # 2. probably don't need to touch these
-css_dir = "../css"
+css_dir = "../../../../../../var/www/html/wordpress/wp-content/themes/bones/library/css/"
+#css_dir = "../css"
 sass_dir = "./"
 images_dir = "../images"
 javascripts_dir = "../js"
