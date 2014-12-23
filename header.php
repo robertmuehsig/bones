@@ -11,7 +11,9 @@
 		<?php // force Internet Explorer to use the latest rendering engine available ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title><?php wp_title(''); ?></title>
+		<title>
+			<?php wp_title('&larr;','true','right'); ?><?php bloginfo('name'); ?>
+		</title>
 
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
@@ -21,16 +23,18 @@
 		<?php // Prevent Twitter from sending non-SSL content. See https://dev.twitter.com/web/overview/widgets-webpage-properties ?>
 		<meta name="twitter:widgets:csp" content="on">
 
-		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
-		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon-180x180.png">
-		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-180x180.png">
+		<?php // icons & favicons (for more: http://stackoverflow.com/questions/23849377/html-5-favicon-support) ?>
+
+		<!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
-		<?php // or, set /favicon.ico for IE10 win ?>
-		<meta name="msapplication-TileColor" content="#f01d4f">
-		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
-		<meta name="theme-color" content="#121212">
+
+		<!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
+		<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon-precomposed.png">
+
+		<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/library/images/favicon.png">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
