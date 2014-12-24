@@ -75,6 +75,30 @@ FONT FACE (IN YOUR FACE)
       font-weight: bold;
 }
 
+@font-face {
+      font-family: 'aileron';
+      src: url('../fonts/aileron-italic-webfont.eot');
+      src: url('../fonts/aileron-italic-webfont?#iefix') format('embedded-opentype'),
+             url('../fonts/aileron-italic-webfont.woff2') format('woff2'),
+             url('../fonts/aileron-italic-webfont.woff') format('woff'),
+             url('../fonts/aileron-italic-webfont.ttf') format('truetype'),
+             url('../fonts/aileron-italic-webfont.svg#font-name') format('svg');
+      font-style: italic;
+}
+
+@font-face {
+      font-family: 'aileron';
+      src: url('../fonts/aileron-bolditalic-webfont.eot');
+      src: url('../fonts/aileron-bolditalic-webfont?#iefix') format('embedded-opentype'),
+             url('../fonts/aileron-bolditalic-webfont.woff2') format('woff2'),
+             url('../fonts/aileron-bolditalic-webfont.woff') format('woff'),
+             url('../fonts/aileron-bolditalic-webfont.ttf') format('truetype'),
+             url('../fonts/aileron-bolditalic-webfont.svg#font-name') format('svg');
+      font-style: italic;
+      font-weight: bold;
+      
+}
+
 /*
 The following is based of Typebase:
 https://github.com/devinhunt/typebase.css
