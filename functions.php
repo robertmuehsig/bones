@@ -248,7 +248,13 @@ function bones_comments( $comment, $args, $depth ) {
             $protocol = "http://";
           endif; 
         ?>
-        <img data-gravatar="<?php echo $protocol ?>www.gravatar.com/avatar/<?php echo md5( $bgauthemail ); ?>?s=40" class="load-gravatar avatar avatar-48 photo" height="40" width="40" src="<?php echo get_template_directory_uri(); ?>/library/images/nothing.gif" />
+        <img 
+          data-gravatar="<?php echo $protocol ?>www.gravatar.com/avatar/<?php echo md5( $bgauthemail ); ?>?s=64" 
+          class="load-gravatar avatar photo" 
+          height="64" width="64" 
+          src="<?php echo get_template_directory_uri(); ?>/library/images/nothing.gif" 
+          alt="A picture of <?php echo get_comment_author(); ?>"
+        />
         <?php // end custom gravatar call ?>
         <?php printf(__( '<cite class="fn">%1$s</cite> %2$s', 'bonestheme' ), get_comment_author_link(), edit_comment_link(__( '(Edit)', 'bonestheme' ),'  ','') ) ?>
         <time datetime="<?php echo comment_time('Y-m-j'); ?>"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'bonestheme' )); ?> </a></time>

@@ -686,8 +686,10 @@ COMMENT STYLES
 	position: relative;
 	clear: both;
 	overflow: hidden;
-	padding: 1.5em;
-	border-bottom: 1px solid $light-gray;
+	padding-left: 1.5em;
+	//padding-right: 1.5em;//Better looking threading
+	padding-bottom: 0.5em;
+	//border-bottom: 1px solid $light-gray;
 
 	.comment-author {
 		padding: 7px;
@@ -696,7 +698,7 @@ COMMENT STYLES
 
 	/* vcard */
 	.vcard {
-		margin-left: 50px;
+		margin-left: 3em;//50px;
 
 		cite.fn {
 			font-weight: 700;
@@ -727,8 +729,8 @@ COMMENT STYLES
 
 		.avatar {
 			position: absolute;
-			left: 16px;
-			border-radius: 50%;
+			left: 1.5em;//16px;
+			border-radius: 15%;
 		}
 
 	} /* end .commentlist .vcard */
@@ -818,6 +820,7 @@ COMMENT STYLES
 			margin: 0.7335em 0 1.5em;
 			font-size: 1em;
 			line-height: 1.5em;
+			padding-right: 1em;
 		}
 
 	} /* end .commentlist .comment_content */
@@ -826,7 +829,8 @@ COMMENT STYLES
 	.comment-reply-link {
 		@extend .blue-btn;
 		font-size: 0.9em;
-		float: right;
+		margin-bottom: 1em;
+		//float: right;
 
 		&:hover,
 		&:focus {
