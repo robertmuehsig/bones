@@ -34,7 +34,7 @@ iframe {
 }
 
 .JPV_thumbnail_img {
-	width: 100%; // Fix the top posts images
+	max-width: 100% !important; // Fix the top posts images
 	border-radius: 1em;
 }
 
