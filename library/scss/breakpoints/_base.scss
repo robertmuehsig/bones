@@ -33,6 +33,11 @@ iframe {
 	content: none !important; // Stop Sharedaddy putting bullets on
 }
 
+.JPV_thumbnail_img {
+	width: 100%; // Fix the top posts images
+	border-radius: 1em;
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
