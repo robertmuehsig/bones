@@ -30,7 +30,7 @@ iframe {
 }
 
 .sharedaddy li:before {
-	content: none !important; // Stop Sharedaddy puttin bullets on
+	content: none !important; // Stop Sharedaddy putting bullets on
 }
 
 /********************
@@ -339,6 +339,7 @@ POSTS & CONTENT STYLES
 			border-bottom: $border-variables;
 			//font-style: italic;
 			margin: 0;
+			padding-bottom: 0.5em;
 
 			time {}
 		}
@@ -508,7 +509,7 @@ POSTS & CONTENT STYLES
 				color: #82CA9D;//$light-gray;
 				font-size: 0.9em;
 				width: auto;
-				//padding: 1.5em;
+				padding: .5em;
 				//margin: 0 0 1.5em;
 				margin-bottom: 0.5em;
 				//border-radius: 0.5em;
@@ -518,6 +519,10 @@ POSTS & CONTENT STYLES
 				&:hover, &:focus {
 					color: lime;	// Highlight on mouseover
 				}
+			}
+
+			code,kbd,pre,samp {
+				font-family: $monospace;
 			}
 
 		} /* end .entry-content */
@@ -1053,6 +1058,11 @@ FOOTER STYLES
 	clear: both;
 	background-color: $black;
 	color: $light-gray;
+
+	code,kbd,pre,samp {
+		font-family: $monospace;
+		font-size: 0.8em;
+	}
 }
 
 	/*
