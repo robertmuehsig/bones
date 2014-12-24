@@ -289,7 +289,7 @@ and be up and running in seconds.
 
 // }
 
-add_action('wp_enqueue_scripts', 'bones_fonts');
+// add_action('wp_enqueue_scripts', 'bones_fonts');
 
 /*
 This function allows you to modify how the 
