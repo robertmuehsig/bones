@@ -23,17 +23,15 @@
 		<?php // Prevent Twitter from sending non-SSL content. See https://dev.twitter.com/web/overview/widgets-webpage-properties ?>
 		<meta name="twitter:widgets:csp" content="on">
 
-		<?php // icons & favicons (for more: http://stackoverflow.com/questions/23849377/html-5-favicon-support) ?>
+		<?php // icons & favicons (for more: http://stackoverflow.com/questions/27612244/minimum-viable-favicon-code) ?>
 
 		<!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
-		<!--[if IE]>
-			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-		<![endif]-->
+		<!--[if IE]><link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/library/images/favicon.ico"><![endif]-->
 
 		<!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
-		<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon-precomposed.png">
+		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon.png">
 
-		<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+		<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 pixels in size. -->
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/library/images/favicon.png">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
