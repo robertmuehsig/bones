@@ -12,7 +12,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>
-			<?php wp_title('&larr;','true','right'); ?><?php bloginfo('name'); ?>
+			<?php wp_title('&larr;','true','right'); ?>
 		</title>
 
 		<?php // mobile meta (hooray!) ?>
