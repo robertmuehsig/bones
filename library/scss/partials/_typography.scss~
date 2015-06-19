@@ -54,50 +54,62 @@ FONT FACE (IN YOUR FACE)
 }
 
 @font-face {
-      font-family: 'Raleway';
-      src: url('../fonts/Raleway-Medium-webfont.eot');
-      src: url('../fonts/Raleway-Medium-webfont?#iefix') format('embedded-opentype'),
-             url('../fonts/Raleway-Medium-webfont.woff2') format('woff2'),
-             url('../fonts/Raleway-Medium-webfont.woff') format('woff'),
-             url('../fonts/Raleway-Medium-webfont.ttf') format('truetype'),
-             url('../fonts/Raleway-Medium-webfont.svg#font-name') format('svg');
+      font-family: 'aileron';
+      src: url('../fonts/aileron-regular-webfont.eot');
+      src: url('../fonts/aileron-regular-webfont?#iefix') format('embedded-opentype'),
+             url('../fonts/aileron-regular-webfont.woff2') format('woff2'),
+             url('../fonts/aileron-regular-webfont.woff') format('woff'),
+             url('../fonts/aileron-regular-webfont.ttf') format('truetype'),
+             url('../fonts/aileron-regular-webfont.svg#font-name') format('svg');
       font-weight: normal;
       font-style: normal;
 }
 
 @font-face {
-      font-family: 'Raleway';
-      src: url('../fonts/Raleway-Bold-webfont.eot');
-      src: url('../fonts/Raleway-Bold-webfont?#iefix') format('embedded-opentype'),
-             url('../fonts/Raleway-Bold-webfont.woff2') format('woff2'),
-             url('../fonts/Raleway-Bold-webfont.woff') format('woff'),
-             url('../fonts/Raleway-Bold-webfont.ttf') format('truetype'),
-             url('../fonts/Raleway-Bold-webfont.svg#font-name') format('svg');
+      font-family: 'aileron';
+      src: url('../fonts/aileron-bold-webfont.eot');
+      src: url('../fonts/aileron-bold-webfont?#iefix') format('embedded-opentype'),
+             url('../fonts/aileron-bold-webfont.woff2') format('woff2'),
+             url('../fonts/aileron-bold-webfont.woff') format('woff'),
+             url('../fonts/aileron-bold-webfont.ttf') format('truetype'),
+             url('../fonts/aileron-bold-webfont.svg#font-name') format('svg');
       font-weight: bold;
 }
 
 @font-face {
-      font-family: 'Raleway';
-      src: url('../fonts/Raleway-Medium-Italic-webfont.eot');
-      src: url('../fonts/Raleway-Medium-Italic-webfont?#iefix') format('embedded-opentype'),
-             url('../fonts/Raleway-Medium-Italic-webfont.woff2') format('woff2'),
-             url('../fonts/Raleway-Medium-Italic-webfont.woff') format('woff'),
-             url('../fonts/Raleway-Medium-Italic-webfont.ttf') format('truetype'),
-             url('../fonts/Raleway-Medium-Italic-webfont.svg#font-name') format('svg');
+      font-family: 'aileron';
+      src: url('../fonts/aileron-italic-webfont.eot');
+      src: url('../fonts/aileron-italic-webfont?#iefix') format('embedded-opentype'),
+             url('../fonts/aileron-italic-webfont.woff2') format('woff2'),
+             url('../fonts/aileron-italic-webfont.woff') format('woff'),
+             url('../fonts/aileron-italic-webfont.ttf') format('truetype'),
+             url('../fonts/aileron-italic-webfont.svg#font-name') format('svg');
       font-style: italic;
 }
 
 @font-face {
-      font-family: 'Raleway';
-      src: url('../fonts/Raleway-Bold-Italic-webfont.eot');
-      src: url('../fonts/Raleway-Bold-Italic-webfont?#iefix') format('embedded-opentype'),
-             url('../fonts/Raleway-Bold-Italic-webfont.woff2') format('woff2'),
-             url('../fonts/Raleway-Bold-Italic-webfont.woff') format('woff'),
-             url('../fonts/Raleway-Bold-Italic-webfont.ttf') format('truetype'),
-             url('../fonts/Raleway-Bold-Italic-webfont.svg#font-name') format('svg');
+      font-family: 'aileron';
+      src: url('../fonts/aileron-bolditalic-webfont.eot');
+      src: url('../fonts/aileron-bolditalic-webfont?#iefix') format('embedded-opentype'),
+             url('../fonts/aileron-bolditalic-webfont.woff2') format('woff2'),
+             url('../fonts/aileron-bolditalic-webfont.woff') format('woff'),
+             url('../fonts/aileron-bolditalic-webfont.ttf') format('truetype'),
+             url('../fonts/aileron-bolditalic-webfont.svg#font-name') format('svg');
       font-style: italic;
       font-weight: bold;
       
+}
+
+@font-face {
+      font-family: 'Righteous-Regular';
+      src: url('../fonts/Righteous-Regular.eot');
+      src: url('../fonts/Righteous-Regular?#iefix') format('embedded-opentype'),
+             url('../fonts/Righteous-Regular.woff2') format('woff2'),
+             url('../fonts/Righteous-Regular.woff') format('woff'),
+             url('../fonts/Righteous-Regular.ttf') format('truetype'),
+             url('../fonts/Righteous-Regular.svg#font-name') format('svg');
+      font-weight: normal;
+      font-style: normal;
 }
 
 /*
@@ -108,8 +120,8 @@ I've edited it a bit, but it's a nice starting point.
 
 
 // font stacks
-$sans-serif:        Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif:             Cambria, Times New Roman, Times, serif;
+$sans-serif:        aileron, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Righteous-Regular", Cambria, Times New Roman, Times, serif;
 $monospace:         "OCR-A", "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
 
 /*
