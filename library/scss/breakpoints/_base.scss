@@ -371,11 +371,12 @@ POSTS & CONTENT STYLES
 			}
 
 			ul {
-
+				/* fallback for browsers which can't handle strings in list-style-type */
+				list-style-type: disc;
+				
 				li {
-					&:before {
-						content: "➫ ";
-					}
+					list-style-type: "➫  ";
+					margin-left: 1.75em;
 				}
 
 			}
