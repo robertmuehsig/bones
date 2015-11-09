@@ -1228,13 +1228,12 @@ textarea,
   line-height: 40px;
   padding: 0 12px;
   margin-bottom: 14px;
-  font-size: 1em;
+  font-size: 1.25em;
   color: #0E091F;
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
-  width: 100%;
-  max-width: 400px;
+  width: 90%;
   font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #eaedf2;
   -webkit-transition: background-color 0.24s ease-in-out;
