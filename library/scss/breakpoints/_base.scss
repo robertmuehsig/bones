@@ -22,11 +22,14 @@ body {
 	color: $text-color;
 	//background-color: $background-colour; 
 	background-image: url(../images/45-degree-fabric-light.png);
-	-webkit-font-smoothing: antialiased; // For mobile browsers
 }
 
 iframe {
 	max-width: 100%; // Stop Oembeds / YouTube etc from being too wide.	
+}
+
+video {
+	max-width: 100%; // Stop videos from being too wide.	
 }
 
 .sharedaddy li:before {
