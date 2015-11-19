@@ -1,8 +1,8 @@
-			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+			<footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 
 				<div id="inner-footer" class="wrap cf">
 
-					<nav role="navigation">
+					<nav>
 						<?php wp_nav_menu(array(
 							'container' => '',                              // remove nav container
 							'container_class' => 'footer-links cf',         // class of container (should you choose to use it)

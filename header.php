@@ -49,7 +49,7 @@
 
 		<div id="container">
 
-			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<header class="header" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="wrap cf">
 
@@ -60,7 +60,7 @@
 					<?php bloginfo('description'); ?>
 
 
-					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					<nav itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
 							'container' => false,                           // remove nav container
 							'container_class' => 'menu cf',                 // class of container (should you choose to use it)

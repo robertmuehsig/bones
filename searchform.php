@@ -7,7 +7,6 @@
 		itemprop="potentialAction"
 		itemscope
 		itemtype="http://schema.org/SearchAction"
-		role="search"
 		method="get"
 		id="searchform"
 		class="searchform"
