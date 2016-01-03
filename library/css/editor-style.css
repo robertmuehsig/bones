@@ -668,9 +668,9 @@ body#tinymce.wp-editor span.amp {
 @font-face {
   /* line 17, ../scss/editor-style.scss */
   body#tinymce.wp-editor {
-    font-family: 'OCR-A';
-    src: url("../fonts/ocra-webfont.eot");
-    src: url("../fonts/ocra-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ocra-webfont.woff2") format("woff2"), url("../fonts/ocra-webfont.woff") format("woff"), url("../fonts/ocra-webfont.ttf") format("truetype"), url("../fonts/ocra-webfont.svg#font-name") format("svg");
+    font-family: 'OCR-B';
+    src: url("../fonts/ocrb-webfont.eot");
+    src: url("../fonts/ocrb-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ocrb-webfont.woff2") format("woff2"), url("../fonts/ocrb-webfont.woff") format("woff"), url("../fonts/ocrb-webfont.ttf") format("truetype"), url("../fonts/ocrb-webfont.svg#font-name") format("svg");
     font-weight: normal;
     font-style: normal;
   }
@@ -713,7 +713,7 @@ body#tinymce.wp-editor span.amp {
     font-weight: bold;
   }
 }
-/* line 125, ../scss/partials/_typography.scss */
+/* line 150, ../scss/partials/_typography.scss */
 body#tinymce.wp-editor p {
   -ms-word-wrap: break-word;
   word-break: break-word;

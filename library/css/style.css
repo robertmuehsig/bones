@@ -601,9 +601,9 @@ FONT FACE (IN YOUR FACE)
   }
 */
 @font-face {
-  font-family: 'OCR-A';
-  src: url("../fonts/ocra-webfont.eot");
-  src: url("../fonts/ocra-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ocra-webfont.woff2") format("woff2"), url("../fonts/ocra-webfont.woff") format("woff"), url("../fonts/ocra-webfont.ttf") format("truetype"), url("../fonts/ocra-webfont.svg#font-name") format("svg");
+  font-family: 'OCR-B';
+  src: url("../fonts/ocrb-webfont.eot");
+  src: url("../fonts/ocrb-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ocrb-webfont.woff2") format("woff2"), url("../fonts/ocrb-webfont.woff") format("woff"), url("../fonts/ocrb-webfont.ttf") format("truetype"), url("../fonts/ocrb-webfont.svg#font-name") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -646,7 +646,7 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-/* line 125, ../scss/partials/_typography.scss */
+/* line 150, ../scss/partials/_typography.scss */
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
@@ -1949,7 +1949,7 @@ POSTS & CONTENT STYLES
 }
 /* line 515, ../scss/breakpoints/_base.scss */
 .entry-content pre {
-  font-family: "OCR-A", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-family: "OCR-B", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   background: #323944;
   color: #82CA9D;
   font-size: 0.9em;
@@ -1966,7 +1966,7 @@ POSTS & CONTENT STYLES
 }
 /* line 533, ../scss/breakpoints/_base.scss */
 .entry-content code, .entry-content kbd, .entry-content pre, .entry-content samp {
-  font-family: "OCR-A", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-family: "OCR-B", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
 /* end .entry-content */
@@ -2329,7 +2329,7 @@ FOOTER STYLES
 }
 /* line 1075, ../scss/breakpoints/_base.scss */
 .footer code, .footer kbd, .footer pre, .footer samp {
-  font-family: "OCR-A", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-family: "OCR-B", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   font-size: 0.8em;
 }
 
