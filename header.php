@@ -33,7 +33,8 @@
 
 		<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 pixels in size. -->
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/library/images/favicon.png">
-
+		<? //	Fix Twitter's share count http://newsharecounts.com/ ?>
+		<script type="text/javascript" src="//newsharecounts.s3-us-west-2.amazonaws.com/nsc.js"></script>
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
 		<?php // wordpress head functions ?>
