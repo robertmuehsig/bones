@@ -1001,7 +1001,8 @@ them however you see fit.
   .d-2of7 {
     float: left;
     padding-right: 0.75em;
-    width: 28.5714286%;
+    width: 28.5714286%; 
+    /* Seems calculated - I guess recalculation this should be ok, currently there is a bit overlap on the sidebar */
   }
 
   /* line 208, ../scss/partials/_grid.scss */
@@ -1541,7 +1542,6 @@ video {
 /* line 39, ../scss/breakpoints/_base.scss */
 .JPV_thumbnail_img {
   max-width: 100% !important;
-  border-radius: 1em;
 }
 
 /********************
@@ -1592,6 +1592,7 @@ LINK STYLES
 /* line 100, ../scss/breakpoints/_base.scss */
 a, a:visited {
   color: #402A8D;
+  text-decoration: none;
   /* on hover */
   /* on click */
   /* mobile tap color */
@@ -1667,6 +1668,7 @@ HEADER STYLES
   background-color: #323944;
   color: #f8f9fa;
   margin-bottom: 1em;
+  padding-bottom: 0.3em;
 }
 
 /* line 181, ../scss/breakpoints/_base.scss */
@@ -1756,9 +1758,7 @@ POSTS & CONTENT STYLES
 
 /* line 284, ../scss/breakpoints/_base.scss */
 .hentry {
-  border-radius: 1em;
   margin-bottom: 1.5em;
-  border: 0.1em solid #696969;
 }
 /* line 290, ../scss/breakpoints/_base.scss */
 .hentry header {
@@ -2277,8 +2277,6 @@ SIDEBARS & ASIDES
 
 /* line 939, ../scss/breakpoints/_base.scss */
 .widget {
-  border-radius: 1em;
-  border: 0.15em solid #696969;
   padding: 0 1em;
   margin-top: 0;
   margin-bottom: 1em;
